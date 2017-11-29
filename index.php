@@ -37,10 +37,19 @@ require_once("config.php");
 //echo $aluno;
 
 
+// alterar um usuario
+//$usuario=new Usuario();
+//$usuario->loadById(8);
+
+//$usuario->update("professor", "159");
+
+//echo $usuario;
+
 $usuario=new Usuario();
-$usuario->loadById(8);
+$usuario->loadById(13);
+echo $usuario . "<br>";
+$usuario->delete();
 
-$usuario->update("professor", "159");
+echo $usuario."excluido com sucesso" ;
 
-echo $usuario;
  ?>
